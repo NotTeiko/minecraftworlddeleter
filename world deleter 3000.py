@@ -1,6 +1,6 @@
-#SET THIS TO ALL YOUR INSTANCE DIRECTORIES
-dir_paths = ["C:\\MultiMC\\instances\\1.16.1_i1\\.minecraft\\saves", "C:\\MultiMC\\instances\\1.16.1_i2\\.minecraft\\saves", "C:\\MultiMC\\instances\\1.16.1_i3\\.minecraft\\saves", "C:\\MultiMC\\instances\\1.16.1_i4\\.minecraft\\saves"]
-#SET THIS TO ALL YOUR INSTANCE DIRECTORIES
+#SET THIS TO ALL YOUR INSTANCE DIRECTORIES, USE r IN FRONT OF EVERY DIRECTORY!!!
+dir_paths = [r"C:\MultiMC\instances\1.16.1_i1\.minecraft\saves", r"C:\MultiMC\instances\1.16.1_i2\.minecraft\saves", r"C:\MultiMC\instances\1.16.1_i3\.minecraft\saves", r"C:\MultiMC\instances\1.16.1_i4\.minecraft\saves"]
+################################################################################
 
 #if you're using some mod that doesn't use Random Speedrun as the world name, set this to whatever it uses
 world_name_start = "Random Speedrun"
@@ -14,7 +14,6 @@ a = 0
 wc = 0
 total = 0
 worlds = []
-
 for i in dir_paths:
     count = 0
     for path in os.listdir(dir_paths[a]): #loop through all folders
